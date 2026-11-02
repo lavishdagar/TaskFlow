@@ -22,7 +22,7 @@ passport.use(
     )
 )
 const cookieExtractor = (req) => {
-    return req?.cookies?.acces_token || null;
+    return req?.cookies?.access_token || null;
 }
 passport.use(
     new JwtStrategy(

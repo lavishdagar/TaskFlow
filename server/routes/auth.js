@@ -11,7 +11,7 @@ const router = Router();
 const cookieOptions = {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
-    samesite: "lax",
+    sameSite: "lax",
     maxAge: 60 * 60 * 1000,
     path: "/"
 }
